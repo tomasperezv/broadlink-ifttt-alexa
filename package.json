@@ -1,0 +1,27 @@
+{
+  "name": "broadlink-ifttt-alexa",
+  "version": "0.1.0",
+  "description": "A bridge between Amazon Alexa and Broadlink IFTTT",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tomasperezv/broadlink-ifttt-alexa.git"
+  },
+  "keywords": [
+    "Alexa",
+    "IFTTT",
+    "Broadlink"
+  ],
+  "author": "Tomas Perez <t@0x101.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tomasperezv/broadlink-ifttt-alexa/issues"
+  },
+  "homepage": "https://github.com/tomasperezv/broadlink-ifttt-alexa#readme",
+  "dependencies": {
+    "broadlink-rm-server": "0.0.6"
+  }
+}
