@@ -30,18 +30,24 @@ A bridge between Amazon Alexa and Broadlink IFTTT
 
 3. Edit `./src/config/commands.json` base on your needs  
 
-  For this, use the `learn-commands` script:
+  To find a command, first of all run the commands learn server:
 
   ```bash
   $ node ./src/learn-commands.js
   ```
 
-  - Visit http://localhost:8000/learn/command_name/MAC
-  - The Broadlink device will initiate learning mode, there is a timeout of 20 seconds
-  - Point your remmote command and send the button
-  - Once the device process the data will generate the corresponding JSON for the new command
-  - Copy the JSON from the previous point and add it to `./src/config/commands.json` as a new entry
-  in the array.
+  Now, use the `command-learn-cli` script to trigger each of the individual command learn operations
+
+  ```bash
+  $ node ./src/command-learn-cli.js my_command_name mac_address
+  ```
+  The Broadlink device will initiate learning mode, there is a timeout of 20 seconds
+
+  Point your remmote command and send the button
+
+  Once the device process the data will generate the corresponding JSON for the new command
+
+  Copy the JSON from the previous point and add it to `./src/config/commands.json` as a new entry in the array.
 
 ## Launch the server
 
