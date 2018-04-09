@@ -33,7 +33,7 @@ A bridge between Amazon Alexa and Broadlink IFTTT
   To find a command, first of all run the commands learn server:
 
   ```bash
-  $ node ./src/learn-commands.js
+  $ node ./src/learn-commands-server.js
   ```
 
   Now, use the `command-learn-cli` script to trigger each of the individual command learn operations
