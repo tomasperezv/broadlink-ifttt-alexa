@@ -39,7 +39,7 @@ A bridge between Amazon Alexa and Broadlink IFTTT
   Now, use the `command-learn-cli` script to trigger each of the individual command learn operations
 
   ```bash
-  $ node ./src/command-learn-cli.js my_command_name mac_address
+  $ node ./src/learn-command-cli.js my_command_name mac_address
   ```
   The Broadlink device will initiate learning mode, there is a timeout of 20 seconds
 
@@ -56,6 +56,12 @@ $ node ./src/index.js
 ```
 
 It will expose the commands under `https://localhost:PORT/command/command_name`
+
+To test your commmands you can use the provided command line utility:
+
+```bash
+$ node ./src/command-cli.js my_command_name
+```
 
 ## Reference
 
